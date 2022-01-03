@@ -1,3 +1,4 @@
+import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -7,7 +8,8 @@ import { HeadComponent } from './head/head.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeadComponent
+    HeadComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
