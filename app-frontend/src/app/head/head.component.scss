@@ -1,0 +1,21 @@
+.navbar-content {
+    color: white;
+}
+
+.navbar {
+    height: 56px;
+    width: 100%;
+    button {
+        margin-bottom: 8px;
+    }
+    >.Paciente {
+        color: white;
+        font-size: 4vh;
+        margin-left: 5px;
+        text-decoration: underline;
+    }
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
