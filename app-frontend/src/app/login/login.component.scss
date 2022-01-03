@@ -1,19 +1,75 @@
-.loginBox{
+.all {
     display: flex;
-    background-color: red;
-    align-items: center;
-    justify-content: center;
-    height: 94.25vh;
-        
-    .loginAlign {
+    flex-direction: row;
+    
+    .words { 
         display: flex;
-        background-color: green;
-        padding: 15px;
-        width: 300px;
-        height: 300px;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        background-color: #028484;
+        width: 60%;
+        height: 100vh;
+        color: white;
 
+        > .titulo {
+            
+            h1{
+                display: flex;
+                justify-content: center;
+                font-size: 80px;
+                margin-top: 45%;
+                    
+                h1:hover{
+                    transition: color grey, ease-in-out 0.2s;
+                }
+            }
+            .frase {
+                text-shadow: 0px 4px 4px black;
+                font-family: Anton;
+                display: flex;
+                justify-content: flex-end;
+                font-size: 32px;
+                margin-top: 30%;
+            }
+            .footer{
+                display: flex;
+                justify-content: center;
+                font-size: 32px;
+                margin-top: 35%;
+            }
+            
+        }
+    }
+
+    .login {
+        display: flex;
+        background-color: rgba(193, 201, 200, 0.65);
+        align-items: center;
+        justify-content: space-evenly;
+        width: 40%;
+        height: 100vh;
+        
+        
+        .loginBox {
+
+
+            > .loginAlign {
+                display: flex;
+                background-color: #C1C9C8;
+                width: 440px;
+                height: 700px;
+                padding-left: 20px;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                border-radius: 15px; 
+
+            }
+
+            .form-control {
+                width: 190%;
+            }
+
+            
+        }
     }
 }
