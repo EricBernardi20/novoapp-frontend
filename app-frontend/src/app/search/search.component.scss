@@ -1,0 +1,28 @@
+.input {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-style: none;
+     ::placeholder {
+        color: rgba(0, 0, 0, 0.39);
+        text-align: center;
+        border-style: none;
+    }
+    input {
+        border-radius: 3px;
+        background-color: #C4C4C4;
+        border-style: none;
+        flex: 0 0 55%;
+    }
+    .btn {
+        border-color: #028484;
+        &:hover {
+            border-style: solid;
+            border-color: #015858;
+        }
+    }
+    .add {
+        margin-left: 2%;
+    }
+}
