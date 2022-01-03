@@ -1,0 +1,17 @@
+body{
+
+    .loginInput {
+        display: flex;
+        background-color: green;
+        align-content: center;
+        height: 176px;
+        width: 33rem;
+
+        > .inputs {
+            flex-wrap: wrap;
+            
+
+        
+        }
+    }
+}
