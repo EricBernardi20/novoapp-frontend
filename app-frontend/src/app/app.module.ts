@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
-import { HeadLoginComponent } from './login/headLogin/head-login.component';
+
 
 
 @NgModule({
@@ -12,7 +12,7 @@ import { HeadLoginComponent } from './login/headLogin/head-login.component';
     AppComponent,
     HeadComponent,
     LoginComponent,
-    HeadLoginComponent
+    
   ],
   imports: [
     BrowserModule,
