@@ -5,13 +5,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
 import { SearchComponent } from './search/search.component';
+import { HeadLoginComponent } from './login/headLogin/head-login.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadComponent,
     LoginComponent,
-    SearchComponent
+    SearchComponent,
+    HeadLoginComponent
   ],
   imports: [
     BrowserModule,
