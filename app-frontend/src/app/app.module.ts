@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
 import { SearchComponent } from './search/search.component';
 import { HeadLoginComponent } from './login/headLogin/head-login.component';
+import { BodyComponent } from './body/body.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { HeadLoginComponent } from './login/headLogin/head-login.component';
     HeadComponent,
     LoginComponent,
     SearchComponent,
-    HeadLoginComponent
+    HeadLoginComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
