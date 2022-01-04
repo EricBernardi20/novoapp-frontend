@@ -1,68 +1,67 @@
 .all {
     display: flex;
     flex-direction: row;
+    height: 100vh;
     
     .words { 
-        display: flex;
+        display: grid;
+        grid-template-rows: 1.3fr 1fr 1fr;
         justify-content: center;
-        background-color: #028484;
+        align-items: center;
         width: 60%;
-        height: 100vh;
+        background-color: #028484;
         color: white;
 
-        > .titulo {
-            
-            h1{
-                display: flex;
-                justify-content: center;
-                font-size: 80px;
-                margin-top: 45%;
-                    
-                h1:hover{
-                    transition: color grey, ease-in-out 0.2s;
-                }
+        .title{
+            display: flex;
+            justify-content: center;
+            font-size: 100px;
+            font-family: 'Anton';
+        
+            &:hover{
+                transition: ease-in-out 0.2s;
+                opacity: 0.7;
             }
-            .frase {
-                text-shadow: 0px 4px 4px black;
-                font-family: Anton;
-                display: flex;
-                justify-content: flex-end;
-                font-size: 32px;
-                margin-top: 30%;
-            }
-            .footer{
-                display: flex;
-                justify-content: center;
-                font-size: 32px;
-                margin-top: 35%;
-            }
-            
-        }
-    }
 
-    
+        }
+
+        .frase {
+            display: flex;
+            justify-content: center;
+            font-family: 'Anton';
+            font-size: 32px;
+            text-shadow: 0px 4px 4px black;
+        }
+
+        .footer{
+            display: flex;
+            justify-content: center;
+            font-family: 'Roboto';
+            font-size: 25px;
+        }   
+    }
 
     .login {
         display: flex;
         flex-direction: column;
         background-color: rgba(193, 201, 200, 0.65);
         align-items: center;
-        
         width: 40%;
         height: 100vh;
 
         .loginTitle{
-            align-self: flex-start;
-            padding-left: 70px;
-            padding-top: 120px;
-            padding-bottom: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30%;
+            color: #028484;
+            font-family: 'Anton';
         }
-        
         
         .loginBox {
 
-
-            > .loginAlign {
+            .loginAlign {
                 display: flex;
                 background-color: #C1C9C8;
                 width: 440px;
@@ -73,31 +72,35 @@
                 flex-direction: column;
                 border-radius: 15px; 
 
-                > .row {
+                .row {
                     display: flex;
                     width: 100%;
 
-                    > .col-lg-6 {
-                        padding: 0px;
+                .col-lg-6 {
+                    padding: 0px;
 
-                        > .input-group {
-                            padding-left: 20px;
-                            flex-wrap: nowrap;
+                    .input-group {
+                        padding-left: 20px;
+                        flex-wrap: nowrap;
 
-                            > .input-group-addon {
-                                width: 13px;
-                                height: 13px;
-                            }
+                        .input-group-addon {
+                        width: 13px;
+                        height: 13px;
+                        }
 
-                            > .Save {
-                                padding-left: 5px;
-                                justify-content: flex-start;
-                            }
+                        .Save {
+                            padding-left: 5px;
+                            justify-content: flex-start;
                         }
                     }
+                }
 
                     .forgot {
                         justify-self: flex-end;
+                        
+                        a{
+                            text-decoration: none;
+                        }
                     }
                 }
 
@@ -109,6 +112,7 @@
                         background-color: #028484;
                         font-size: 25px;
                         width: 200px;
+                        margin-top: 50px;
                     }
                 }
 

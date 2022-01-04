@@ -1,19 +1,15 @@
 <div class="all">
     <div class="words">
-        <div class="titulo">
-            <h1>PACIENTZ</h1>
+            <h1 class="title">PACIENTZ</h1>
             <p class="frase">SUA PLATAFORMA DE PESQUISA A PACIENTE</p>
-            <p class="footer">- Desenvolvido pelos trainee's Pulsati -</p>
-        </div>
+            <p  class="footer">- Desenvolvido pelos trainee's Pulsati -</p>
     </div>
-
     <div class="login">
         <div class="loginTitle">
             <h1>FAZER LOGIN</h1>
         </div>
         <div class="loginBox">
             <div class="loginAlign">
-
                 <div class="inputs">
                     <input type="text" class="form-control" placeholder="Nome/Email" aria-describedby="basic-addon1">
                 </div>
@@ -33,19 +29,13 @@
                         </div>
                       </div>
                     </div>
-                    
                     <div class="forgot">
                         <a href="#">Esqueci minha senha</a>
                     </div>
                 </div>    
                 <br>
                 <div class="login-button">
-                    <button class="btn btn-primary btn-lg" id="buttonLogin" href="#" role="button">LOGIN</button>
-                </div>
-                <div class="register">
-                    <br>
-                    <P>Não tem conta?</P>
-                    <a href="#">Cadastre-se</a>
+                    <button (click)="login()"    class="btn btn-primary btn-lg" id="buttonLogin" href="#" role="button">LOGIN</button>
                 </div>
             </div>
         </div>
