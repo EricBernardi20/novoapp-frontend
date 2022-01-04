@@ -40,13 +40,23 @@
         }
     }
 
+    
+
     .login {
         display: flex;
+        flex-direction: column;
         background-color: rgba(193, 201, 200, 0.65);
         align-items: center;
-        justify-content: space-evenly;
+        
         width: 40%;
         height: 100vh;
+
+        .loginTitle{
+            align-self: flex-start;
+            padding-left: 70px;
+            padding-top: 120px;
+            padding-bottom: 80px;
+        }
         
         
         .loginBox {
@@ -56,13 +66,57 @@
                 display: flex;
                 background-color: #C1C9C8;
                 width: 440px;
-                height: 700px;
+                height: 500px;
                 padding-left: 20px;
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column;
                 border-radius: 15px; 
 
+                > .row {
+                    display: flex;
+                    width: 100%;
+
+                    > .col-lg-6 {
+                        padding: 0px;
+
+                        > .input-group {
+                            padding-left: 20px;
+                            flex-wrap: nowrap;
+
+                            > .input-group-addon {
+                                width: 13px;
+                                height: 13px;
+                            }
+
+                            > .Save {
+                                padding-left: 5px;
+                                justify-content: flex-start;
+                            }
+                        }
+                    }
+
+                    .forgot {
+                        justify-self: flex-end;
+                    }
+                }
+
+                > .login-button {
+                    display: flex;
+                    align-self: center;
+
+                    #buttonLogin {
+                        font-size: 25px;
+                        width: 200px;
+                    }
+                }
+
+                .register {
+                    p {
+                        margin: 0px;
+                    }
+                    
+                }
             }
 
             .form-control {
@@ -73,3 +127,4 @@
         }
     }
 }
+
