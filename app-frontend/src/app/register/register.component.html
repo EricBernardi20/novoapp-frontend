@@ -1,45 +1,51 @@
-
+<div class="backButton">
+<a [routerLink]="['']">
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"class="bi bi-arrow-left" viewBox="0 0 16 16" >
+    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+  </svg>
+</a>
+</div>  
 
 <form>
-    <h1>CADASTRO</h1>
-    <label>
-      <p class="label-txt">Nome Completo</p>
-      <input type="text" class="input">
-      <div class="line-box">
-        <div class="line"></div>
+  <h1>CADASTRO</h1>
+  <label>
+    <p class="label-txt">Nome Completo</p>
+    <input type="text" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">Nome de usuario</p>
+    <input type="text" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">Email</p>
+    <input type="text" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">Senha</p>
+    <input type="text" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <div class="Save">
+        <p>Concordo com os termos de uso da Pacientz </p>
       </div>
-    </label>
-    <label>
-      <p class="label-txt">Nome de usuario</p>
-      <input type="text" class="input">
-      <div class="line-box">
-        <div class="line"></div>
-      </div>
-    </label>
-    <label>
-      <p class="label-txt">Email</p>
-      <input type="text" class="input">
-      <div class="line-box">
-        <div class="line"></div>
-      </div>
-    </label>
-    <label>
-        <p class="label-txt">Senha</p>
-        <input type="text" class="input">
-        <div class="line-box">
-          <div class="line"></div>
-        </div>
-      </label>
-      <div class="col-lg-6">
-        <div class="input-group">
-          <span class="input-group-addon">
-            <input type="checkbox" aria-label="...">
-          </span>
-          <div class="Save">
-              <p>Concordo com os termos de uso da Pacientz </p>
-          </div>
-        </div>
-      </div>
-      <br>
-    <button class="buttonRegister" type="submit">Cadastrar</button>
-  </form>
+    </div>
+  </div>
+  <br>
+  <button class="buttonRegister" type="submit">Cadastrar</button>
+</form>
