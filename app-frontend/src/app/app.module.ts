@@ -7,9 +7,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { HeadComponent } from './home/head/head.component';
-
 import { SearchComponent } from './home/search/search.component';
 import { HomeComponent } from './home/home.component';
+
+
+
 
 
 @NgModule({
@@ -22,6 +24,9 @@ import { HomeComponent } from './home/home.component';
     BodyAddsComponent,
     RegisterComponent,
     HomeComponent
+
+
+
   ],
   imports: [
     BrowserModule,
