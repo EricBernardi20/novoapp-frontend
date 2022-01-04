@@ -1,3 +1,6 @@
+import { RegisterComponent } from './register/register.component';
+import { BodyAddsComponent } from './body-adds/body-adds.component';
+import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,6 +17,9 @@ import { SearchComponent } from './search/search.component';
     HeadComponent,
     LoginComponent,
     SearchComponent,
+    FooterComponent,
+    BodyAddsComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
