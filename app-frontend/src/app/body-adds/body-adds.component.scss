@@ -1,0 +1,38 @@
+.news {
+    display: flex;
+    justify-content: center;
+    h3 {
+        color: #028383;
+        font-size: 20px;
+        background-color: white;
+        margin: 0;
+        font-size: 2em;
+    }
+}
+
+.noticias {
+    background-color: #028383;
+    height: 0.8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    >.noticias-space {
+        background-color: white;
+        width: 400px;
+        height: 0.8px;
+    }
+}
+
+.box-adds {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    font-family: Allan;
+    color: #028383;
+    z-index: 9999;
+    position: relative;
+    img {
+        box-shadow: 0.01em 0.15em 0.40em black;
+        height: 240px;
+    }
+}
