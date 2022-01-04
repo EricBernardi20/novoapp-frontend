@@ -1,6 +1,8 @@
 .news {
+    margin-top: 4%;
     display: flex;
     justify-content: center;
+    font-family: Allan;
     h3 {
         color: #028383;
         font-size: 20px;
@@ -24,13 +26,15 @@
 }
 
 .box-adds {
-    margin-top: 3%;
+    margin-top: 4%;
     display: flex;
     justify-content: space-around;
     font-family: Allan;
     color: #028383;
     z-index: 9999;
     position: relative;
+    font-size: 20px;
+    font-style: italic;
     img {
         box-shadow: 0.01em 0.15em 0.40em black;
         height: 240px;

@@ -8,6 +8,7 @@ import { HeadComponent } from './head/head.component';
 
 import { SearchComponent } from './search/search.component';
 import { BodyAddsComponent } from './body-adds/body-adds.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { BodyAddsComponent } from './body-adds/body-adds.component';
     LoginComponent,
     SearchComponent,
     BodyComponent,
-    BodyAddsComponent
+    BodyAddsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
