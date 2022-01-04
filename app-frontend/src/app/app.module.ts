@@ -1,3 +1,4 @@
+
 import { RegisterComponent } from './register/register.component';
 import { BodyAddsComponent } from './body-adds/body-adds.component';
 import { FooterComponent } from './footer/footer.component';
@@ -9,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
 import { SearchComponent } from './search/search.component';
 import { ModalAddsComponent } from './modal-adds/modal-adds.component';
+import { BodyComponent } from './body-cards/body.component';
 
 
 @NgModule({
@@ -21,6 +23,7 @@ import { ModalAddsComponent } from './modal-adds/modal-adds.component';
     BodyAddsComponent,
     FooterComponent,
     ModalAddsComponent,
+    BodyComponent,
     RegisterComponent
   ],
   imports: [
