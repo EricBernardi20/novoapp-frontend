@@ -1,0 +1,39 @@
+.modal-content {
+    display: flex;
+    background-color: #028484;
+    color: white;
+    >.modal-header {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        padding: 10px;
+        >.modal-title {
+            background-color: rgba(0, 0, 0, 0.57);
+            border-radius: 5px;
+            text-align: center;
+            h5 {
+                padding: 5px;
+            }
+        }
+    }
+    >.modal-footer {
+        display: flex;
+        justify-content: space-around;
+        >.button1 {
+            border-radius: 5px;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.90);
+                transition: background-color 0.2s ease-in-out;
+            }
+            transition: background-color 0.3s ease-in-out;
+        }
+        >.button2 {
+            border-radius: 5px;
+            &:hover {
+                background-color: red;
+                transition: background-color 0.2s ease-in-out;
+            }
+            transition: background-color 0.3s ease-in-out;
+        }
+    }
+}
