@@ -1,3 +1,4 @@
+import { ModalAddsComponent } from './modal-adds/modal-adds.component';
 import { BodyComponent } from './body-cards/body.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RegisterComponent } from './register/register.component';
@@ -24,7 +25,8 @@ import { SearchingComponent } from './searching/searching.component';
     RegisterComponent,
     HomeComponent,
     SearchingComponent,
-    BodyComponent
+    BodyComponent,
+    ModalAddsComponent
   ],
   imports: [
     AppRoutingModule,
