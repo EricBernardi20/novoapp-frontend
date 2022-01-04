@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
 
 import { SearchComponent } from './search/search.component';
-import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -15,7 +14,6 @@ import { RegisterComponent } from './register/register.component';
     HeadComponent,
     LoginComponent,
     SearchComponent,
-    RegisterComponent,
   ],
   imports: [
     BrowserModule,
