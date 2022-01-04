@@ -1,14 +1,15 @@
 import { RegisterComponent } from './register/register.component';
 import { BodyAddsComponent } from './body-adds/body-adds.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './home/footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
-import { HeadComponent } from './head/head.component';
+import { HeadComponent } from './home/head/head.component';
 
-import { SearchComponent } from './search/search.component';
+import { SearchComponent } from './home/search/search.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SearchComponent } from './search/search.component';
     SearchComponent,
     FooterComponent,
     BodyAddsComponent,
-    RegisterComponent
+    RegisterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
