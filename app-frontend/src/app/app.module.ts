@@ -1,5 +1,6 @@
+import { AuthService } from './login/services/auth.service';
 import { ModalAddUserComponent } from './modal-add-user/modal-add-user.component';
-import { AuthService } from './login/auth.service';
+import { HttpClientModule } from '@angular/common/http'
 import { ModalAddsComponent } from './modal-adds/modal-adds.component';
 import { BodyCardsComponent } from './body-cards/body.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -37,7 +38,8 @@ import { NewsComponent } from './News/body-adds.component';
     AppRoutingModule,
     BrowserModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

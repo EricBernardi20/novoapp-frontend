@@ -1,0 +1,5 @@
+const response = await axios.post(this.url, {
+      ds_nome: username,
+      ds_senha: password,
+      ds_email: email
+    })
