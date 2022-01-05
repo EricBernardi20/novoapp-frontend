@@ -6,3 +6,9 @@ export interface patients {
     cpf : string
     id : string
   }
+
+export interface Usuario {
+    ds_nome : string
+    ds_email : string
+    ds_senha : string
+  }
