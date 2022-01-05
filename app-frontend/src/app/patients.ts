@@ -12,3 +12,13 @@ export interface Patient {
   cpf: string
   id: string
 }
+
+export class RequestLogin {
+  public ds_nome!: string;
+  public ds_senha!: string;
+  public ds_email!: string;
+
+}
+export class ResponseLogin {
+  public access_token!: String;
+}

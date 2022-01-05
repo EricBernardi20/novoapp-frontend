@@ -11,12 +11,11 @@
         <div class="loginBox">
             <div class="loginAlign">
                 <div class="inputs">
-
-                    <input type="text" class="form-control" placeholder="Nome/Email" aria-describedby="basic-addon1">
+                    <input type="text" [(ngModel)]="requestLogin.ds_nome" class="form-control" placeholder="Nome" aria-describedby="basic-addon1">
                 </div>
                 <br>
                 <div class="inputs">
-                    <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon2">
+                    <input type="password" [(ngModel)]="requestLogin.ds_senha" class="form-control" placeholder="Password" aria-describedby="basic-addon2">
                 </div>
                 <br>
                 <div class="row">
@@ -36,7 +35,7 @@
                 </div>
                 <br>
                 <div class="login-button">
-                    <button class="btn btn-primary btn-lg" id="buttonLogin" type="submit" href="#" role="button" (click)="fazerLogin()">LOGIN</button>
+                    <button (click)="doLogin()" class="btn btn-primary btn-lg" id="buttonLogin" type="submit" href="#" role="button">LOGIN</button>
                 </div>
                 <div class="register">
                     <br>

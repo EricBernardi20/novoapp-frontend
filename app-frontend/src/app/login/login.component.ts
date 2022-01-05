@@ -1,7 +1,6 @@
-
-import { AuthService } from './auth.service';
 import { Component, OnInit } from '@angular/core';
-
+import { RequestLogin } from '../patients';
+import { AuthService } from './services/auth.service'
 
 @Component({
   selector: 'app-login',
@@ -10,16 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { 
+  public requestLogin!: RequestLogin;
+
+  constructor(private authService: AuthService) {
+
   }
 
-  ngOnInit() {
-    
+  ngOnInit(): void {
+    this.requestLogin = new RequestLogin();
   }
 
-  fazerLogin(){
+  public doLogin(): void {
+    this.authService.doLogin(this.requestLogin).subscribe((data: any) => {
+      console.log(data)
+    })
   }
 
-  
+
+
 
 }
