@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import axios from 'axios';
-import { Patient } from './patients';
+import { Patient, patients } from './patients';
 
 @Injectable({
   providedIn: 'root'
@@ -8,151 +8,151 @@ import { Patient } from './patients';
 export class PatientsService {
 
 
-  private url: string = ``
+  private url: string = `http://localhost:8080/oauth/token=?7a5270c3-8067-43c1-b717-946c43d1eceb`
 
   constructor() { }
 
   public async getPatientsByName(name: string) {
-    // const response = await Axios.get<patients>(this.url + '&s=' + title)
+    const response = await axios.get<patients>(this.url + '&s=' + name)
 
-    const response = [
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },{
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },{
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },{
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },{
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      },
-      {
-        "status": "Ativo",
-        "ds_nome": "Leo",
-        "dt_nascimento": "24/05/2002",
-        "tipo_sangue": "A+",
-        "cpf": "222.333.444-55",
-        "id": "01"
-      }
+    // const response = [
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },{
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },{
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },{
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },{
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   },
+    //   {
+    //     "status": "Ativo",
+    //     "ds_nome": "Leo",
+    //     "dt_nascimento": "24/05/2002",
+    //     "tipo_sangue": "A+",
+    //     "cpf": "222.333.444-55",
+    //     "id": "01"
+    //   }
 
       
-    ] as Patient[]
+    // ] as Patient[]
 
-    return response
+    return response.data
   }
 
 
