@@ -1,3 +1,4 @@
+import { AuthService } from './login/auth.service';
 import { ModalAddsComponent } from './modal-adds/modal-adds.component';
 import { BodyComponent } from './body-cards/body.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -31,7 +32,7 @@ import { BrowserModule } from '@angular/platform-browser';
     BrowserModule,
     NgbModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
