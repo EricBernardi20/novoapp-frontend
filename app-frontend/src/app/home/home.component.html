@@ -1,5 +1,20 @@
 <app-head></app-head>
-<app-search></app-search>
-<app-modal-adds></app-modal-adds>
-<app-body-adds></app-body-adds>
+
+<div class="input">
+    <input type="text" #searchBox placeholder="Pesquisar paciente" onkeyup="if(event.keyCode===13){submit.click()}">
+    <form class="form-inline">
+        <button class="btn" type="button" id="submit" (click)="search(searchBox.value)"> <img src="../../assets/search_white_24dp.svg" alt=""></button>
+    </form>
+    <div class="add">
+        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" style="background-color: #028484; color: white;">Adcionar <img src="../../assets/add_white_24dp.svg" alt="Search"></button>
+    </div>
+</div>
+
+<app-modal-addon></app-modal-addon>
+<!-- <div class="cards">
+    <app-body-cards *ngFor="let patient of patients" [patient]="patient"></app-body-cards>
+</div> -->
+<div>
+    <app-body-adds></app-body-adds>
+</div>
 <app-footer></app-footer>

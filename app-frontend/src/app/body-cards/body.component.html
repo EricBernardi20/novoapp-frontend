@@ -2,17 +2,22 @@
     <div class="box">
         <img class="card-img-top" src="../../assets/Image in Twitter Default Icon collection by _َ.jpg" alt="Card image cap" style=" height: 90px; width: 90px;">
         <div class="card-body">
-            <h6>ID: </h6>
-            <h3>status</h3>
+            <div class="status">
+                <h5>ID:</h5>
+                <h6>{{patient.id}}</h6>
+            </div>
+            <div class="status">
+                <h5>Status:</h5>
+                <h6>{{patient.status}}</h6>
+            </div>
             <h5>Nome</h5>
-            <input type="text" placeholder="Nome">
+            <h6>{{patient.ds_nome}}</h6>
             <h5>Data Nascimento</h5>
-            <input type="date" placeholder="00/00/0000" style="width: 185px;">
+            <h6>{{patient.dt_nascimento}}</h6>
             <h5>Tipo Sanguíneo</h5>
-            <input type="text" placeholder="A+">
-
+            <h6>{{patient.tipo_sangue}}</h6>
             <h5>CPF</h5>
-            <input type="text" placeholder="123.456.789-10">
+            <h6>{{patient.cpf}}</h6>
         </div>
         <div class="buttons">
             <div class="button">

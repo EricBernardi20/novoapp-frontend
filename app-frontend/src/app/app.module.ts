@@ -12,7 +12,6 @@ import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { SearchingComponent } from './searching/searching.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { SearchingComponent } from './searching/searching.component';
     BodyAddsComponent,
     RegisterComponent,
     HomeComponent,
-    SearchingComponent,
     BodyComponent,
     ModalAddsComponent
   ],

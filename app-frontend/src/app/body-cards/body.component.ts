@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { patients, Patient } from './../patients';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { PatientsService } from '../patients.service';
 
 @Component({
   selector: 'app-body-cards',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private patientsService: PatientsService) { }
+
+  @Input() public patient: Patient = {} as Patient;
 
   ngOnInit(): void {
   }

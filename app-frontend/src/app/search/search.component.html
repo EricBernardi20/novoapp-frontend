@@ -1,7 +1,7 @@
 <div class="input">
-    <input type="text" placeholder="Pesquisar paciente" onkeyup="if(event.keyCode===13){submit.click()}">
+    <input type="text" #searchBox placeholder="Pesquisar paciente" onkeyup="if(event.keyCode===13){submit.click()}">
     <form class="form-inline">
-        <a [routerLink]="['/searching']"><button class="btn" id="submit"> <img src="../../assets/search_white_24dp.svg" alt=""></button></a>
+        <button class="btn" type="button" id="submit" (click)="search(searchBox.value)" (click)="onMostraBotao()"> <img src="../../assets/search_white_24dp.svg" alt=""></button>
     </form>
     <div class="add">
         <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" style="background-color: #028484; color: white;">Adcionar <img src="../../assets/add_white_24dp.svg" alt="Search"></button>

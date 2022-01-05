@@ -12,7 +12,9 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none">
         <span class="navbar-toggler-icon st"></span>
       </button>
-        <h3 class="Paciente" href="#" style="font-weight: bold">Pacientz</h3>
+        <a [routerLink]="['']" class="title">
+            <h3 class="Paciente" href="#" style="font-weight: bold">Pacientz</h3>
+        </a>
         <div class="spacer"></div>
         <img src="../../assets/login_white_24dp.svg">
         <a class="navbar-brand" href="#" [routerLink]="['/login']" style="font-size: 28px; font-family: 'Roboto';">Logout</a>

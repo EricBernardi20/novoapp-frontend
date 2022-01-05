@@ -1,15 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { PatientsService } from './../patients.service';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Patient } from './../patients';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss']
 })
-export class SearchComponent implements OnInit {
+export class SearchComponent  {
+  
+  hidden: Boolean = false;
+  
 
-  constructor() { }
+  @Input() patients: Patient[] = [];
+  @Output() patient= new EventEmitter<Patient>();
+    
 
-  ngOnInit(): void {
+  constructor(private patientsService: PatientsService) { }
+
+  onMostraBotao() {
+    this.hidden = !this.hidden;
+  } 
+
+  async search(title: string) {
+    const response = await this.patientsService.getPatientsByName(title)
+
+    this.patients = response
+    
   }
 
 }

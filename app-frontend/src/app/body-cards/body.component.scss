@@ -1,9 +1,9 @@
 .card {
     margin-top: 15 px;
-    >.box {
-         ::placeholder {
-            color: white;
-        }
+    border-style: none;
+    border: none;
+    .box {
+        margin-top: 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -25,6 +25,9 @@
             font-size: 15px;
             margin: 0;
         }
+        h6 {
+            color: white;
+        }
         input {
             background: transparent;
             border: none;
@@ -44,4 +47,8 @@
             }
         }
     }
+}
+
+.status {
+    display: flex;
 }
