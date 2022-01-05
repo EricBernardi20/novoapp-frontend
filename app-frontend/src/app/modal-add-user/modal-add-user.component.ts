@@ -12,4 +12,12 @@ export class ModalAddUserComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  data = {
+    password: '',
+    password_confirm: '',
+  };
+
+  title = 'app';
 }
+
+

@@ -14,6 +14,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RegisterComponent } from './register/register.component';
 import { NewsComponent } from './News/body-adds.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,12 +29,14 @@ import { NewsComponent } from './News/body-adds.component';
     ModalAddsComponent,
     RegisterComponent,
     NewsComponent,
-    ModalAddUserComponent
+    ModalAddUserComponent,
+    
 ],
   imports: [
     AppRoutingModule,
     BrowserModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
