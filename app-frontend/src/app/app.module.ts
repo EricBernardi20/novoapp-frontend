@@ -32,8 +32,9 @@ import { NewsComponent } from './News/body-adds.component';
     ModalAddsComponent,
     RegisterComponent,
     NewsComponent,
-    ModalAddUserComponent
-  ],
+    ModalAddUserComponent,
+    
+],
   imports: [
     AppRoutingModule,
     BrowserModule,
