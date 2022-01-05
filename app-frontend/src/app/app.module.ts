@@ -13,6 +13,8 @@ import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ModalAddsPipe } from './modal-adds/modal-adds.pipe';
+import { FormsModule }  from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { BrowserModule } from '@angular/platform-browser';
     RegisterComponent,
     HomeComponent,
     BodyComponent,
-    ModalAddsComponent
+    ModalAddsComponent,
+    ModalAddsPipe
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
