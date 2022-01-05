@@ -1,4 +1,6 @@
+import { PatientsService } from './../patients.service';
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-modal-add-user',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalAddUserComponent implements OnInit {
 
-  constructor() { }
+  resposavel: string = '';
+  nomecompleto: string = '';
+  nomeuser: string = '';
+  email: string = '';
+  password: any;
+  confirmpassword: any;
+
+  contato: any;
+
+  constructor(private service: PatientsService) { }
 
   ngOnInit(): void {
+
+    this.contato = {} ; 
   }
 
   data = {
@@ -18,6 +31,14 @@ export class ModalAddUserComponent implements OnInit {
   };
 
   title = 'app';
+
+  criar(frm: FormGroup){
+    this.service.criar(this.contato).subscribe(resposta =>{
+      this.contato.push(resposta);
+
+      frm.reset()
+    })
+  }
 }
 
 

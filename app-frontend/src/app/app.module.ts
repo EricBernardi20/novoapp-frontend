@@ -16,6 +16,8 @@ import { ModalAddsPipe } from './modal-adds/modal-adds.pipe';
 import { FormsModule } from '@angular/forms'
 import { RegisterComponent } from './register/register.component';
 import { NewsComponent } from './News/body-adds.component';
+import { HttpClientModule} from '@angular/common/http'
+
 
 
 @NgModule({
@@ -38,6 +40,7 @@ import { NewsComponent } from './News/body-adds.component';
     AppRoutingModule,
     BrowserModule,
     NgbModule,
+    HttpClientModule,
     FormsModule
   ],
   providers: [AuthService],
