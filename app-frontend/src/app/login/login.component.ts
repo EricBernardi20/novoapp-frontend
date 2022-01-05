@@ -1,4 +1,4 @@
-import { Usuario } from './../patients';
+
 import { AuthService } from './auth.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -10,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private authService: AuthService) { }
+  constructor() { 
+  }
 
   ngOnInit() {
     
@@ -18,5 +19,7 @@ export class LoginComponent implements OnInit {
 
   fazerLogin(){
   }
+
+  
 
 }
