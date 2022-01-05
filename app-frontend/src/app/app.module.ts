@@ -12,6 +12,8 @@ import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ModalAddsPipe } from './modal-adds/modal-adds.pipe';
+import { FormsModule } from '@angular/forms'
 import { RegisterComponent } from './register/register.component';
 import { NewsComponent } from './News/body-adds.component';
 
@@ -25,15 +27,17 @@ import { NewsComponent } from './News/body-adds.component';
     FooterComponent,
     HomeComponent,
     BodyCardsComponent,
+    ModalAddsPipe,
     ModalAddsComponent,
     RegisterComponent,
     NewsComponent,
     ModalAddUserComponent
-],
+  ],
   imports: [
     AppRoutingModule,
     BrowserModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
