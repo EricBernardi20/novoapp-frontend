@@ -25,7 +25,7 @@ export class SearchComponent  {
   async search(title: string) {
     const response = await this.patientsService.getPatientsByName(title)
 
-    this.patients = response
+    this.patients= response.Search
     
   }
 

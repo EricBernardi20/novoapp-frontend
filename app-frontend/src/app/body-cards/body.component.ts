@@ -7,7 +7,7 @@ import { PatientsService } from '../patients.service';
   templateUrl: './body.component.html',
   styleUrls: ['./body.component.scss']
 })
-export class BodyComponent implements OnInit {
+export class BodyCardsComponent implements OnInit {
 
   constructor(private patientsService: PatientsService) { }
 
