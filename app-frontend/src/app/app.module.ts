@@ -1,9 +1,8 @@
+import { ModalAddUserComponent } from './modal-add-user/modal-add-user.component';
 import { AuthService } from './login/auth.service';
 import { ModalAddsComponent } from './modal-adds/modal-adds.component';
-import { BodyComponent } from './body-cards/body.component';
+import { BodyCardsComponent } from './body-cards/body.component';
 import { AppRoutingModule } from './app-routing.module';
-import { RegisterComponent } from './register/register.component';
-import { BodyAddsComponent } from './body-adds/body-adds.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -13,6 +12,9 @@ import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RegisterComponent } from './register/register.component';
+import { NewsComponent } from './News/body-adds.component';
+
 
 @NgModule({
   declarations: [
@@ -21,12 +23,13 @@ import { BrowserModule } from '@angular/platform-browser';
     LoginComponent,
     SearchComponent,
     FooterComponent,
-    BodyAddsComponent,
-    RegisterComponent,
     HomeComponent,
-    BodyComponent,
-    ModalAddsComponent
-  ],
+    BodyCardsComponent,
+    ModalAddsComponent,
+    RegisterComponent,
+    NewsComponent,
+    ModalAddUserComponent
+],
   imports: [
     AppRoutingModule,
     BrowserModule,

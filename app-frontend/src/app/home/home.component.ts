@@ -22,20 +22,20 @@ export class HomeComponent implements OnInit {
     this.selectedPatient = receiverPatient
   }
 
-  async getPatients(name: string) {
-    const listaDePacientes = await this.patientsService.getPatientsByName(name)
+  // async getPatients(name: string) {
+  //   const listaDePacientes = await this.patientsService.getPatientsByName(name)
 
-    this.patients = listaDePacientes
-  }
+  //   this.patients = listaDePacientes
+  // }
 
   onMostraBotao() {
     this.hidden = !this.hidden;
   } 
 
-  async search(title: string) {
-    const response = await this.patientsService.getPatientsByName(title)
+  async search(name: string) {
+    const response = await this.patientsService.getPatientsByName(name)
 
-    this.patients = response
+    this.patients = response.Search
     
   }
 

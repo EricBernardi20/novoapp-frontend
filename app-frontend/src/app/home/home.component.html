@@ -6,15 +6,16 @@
         <button class="btn" type="button" id="submit" (click)="search(searchBox.value)"> <img src="../../assets/search_white_24dp.svg" alt=""></button>
     </form>
     <div class="add">
-        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" style="background-color: #028484; color: white;">Adcionar <img src="../../assets/add_white_24dp.svg" alt="Search"></button>
+        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" style="background-color: #028484; color: white;">Adicionar <img src="../../assets/add_white_24dp.svg" alt="Search"></button>
     </div>
 </div>
 
 <app-modal-addon></app-modal-addon>
-<!-- <div class="cards">
+<div class="cards">
     <app-body-cards *ngFor="let patient of patients" [patient]="patient"></app-body-cards>
-</div> -->
+</div>
 <div>
     <app-body-adds></app-body-adds>
 </div>
+<app-modal-add-user></app-modal-add-user>
 <app-footer></app-footer>

@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './modal-adds.component.html',
   styleUrls: ['./modal-adds.component.scss']
 })
-export class ModalAddsComponent implements OnInit {
+export class ModalAddsComponent implements OnInit { 
 
   constructor() { }
 
