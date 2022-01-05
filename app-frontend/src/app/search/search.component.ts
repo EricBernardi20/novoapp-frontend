@@ -13,7 +13,7 @@ export class SearchComponent  {
   
 
   @Input() patients: Patient[] = [];
-  @Output() patient= new EventEmitter<Patient>();
+  @Output() onClick= new EventEmitter();
     
 
   constructor(private patientsService: PatientsService) { }
