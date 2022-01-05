@@ -1,4 +1,4 @@
-import { Usuario } from './../patients';
+// import { Usuario } from './../patients';
 import { AuthService } from './auth.service';
 import { Component, OnInit } from '@angular/core';
 
