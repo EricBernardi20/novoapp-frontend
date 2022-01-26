@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import axios from 'axios';
+import  axios  from 'axios';
 import { Patient, patients } from './patients';
 
 @Injectable({
@@ -9,7 +9,7 @@ import { Patient, patients } from './patients';
 export class PatientsService {
 
 
-  private url: string = `http://localhost:8080/oauth/token=?7a5270c3-8067-43c1-b717-946c43d1eceb`
+  private url: string = `http://localhost:8000/api/Patients`
 
   constructor(private http: HttpClient) { }
 
